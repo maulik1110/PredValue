@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1vw 2vw;
+}
+
+h1{
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+    margin: 2vw 0 1vw 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#search-input{
+    width: 30%;
+    padding: 1vw 2vw;
+    border-radius: .5vw;
+    border: none;
+    font-size: 2vw;
+    box-shadow: 0 0 .2vw rgb(0, 0, 0);
+    color: #dadada;
+}
+
+#search-button{
+    width: 10%;
+    padding: 1vw 2vw;
+    border-radius: .5vw;
+    border: none;
+    font-size: 2vw;
+    box-shadow: 0 0 .2vw rgb(0, 0, 0);
+    background-color: #689679;
+    color: #fff;
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* height: 120vh; */
+    flex-wrap: wrap;
+    max-width: 100%;
+    /* padding: 1vw 2vw; */
+    overflow: hidden;
+
+}
+
+.result{
+    margin-bottom: 2vw;
+    width: 45%;
+    height: 50%;
+    border-radius: .5vw;
+    box-shadow: 0 0 .2vw rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.result img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .4s all ease;
+    height: 200px;
+    /* overflow: hidden; */
+}
+
+.result img:hover{
+    opacity: 0.8;
+}
+.result a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    text-align: center;
+    color: #333;
+    padding: 1vw;
+    display: block;
+    text-transform: uppercase;
+}
+
+.showmore{
+    /* width: 10%; */
+    padding: 1vw 2vw;
+    border-radius: .5vw;
+    border: none;
+    font-size: 2vw;
+    box-shadow: 0 0 .2vw rgb(0, 0, 0);
+    background-color: #689679;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    display: none;
+}
+
+
+@media screen and (max-width:780px) {
+    .result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .result{
+        width: 100%;
+    }
+}
